@@ -1,0 +1,15 @@
+.navigation {
+  padding: 16px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a.logo {
+    font-family: "Fira Code", monospace;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
