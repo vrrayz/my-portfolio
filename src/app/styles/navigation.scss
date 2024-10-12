@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
+  background: $background;
+  box-shadow: 1px 1px 6px #0000003b;
   a.logo {
     font-family: "Fira Code", monospace;
     font-weight: bold;
@@ -19,6 +23,56 @@
       animation-duration: 500ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+    }
+  }
+}
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  transition: top 500ms linear;
+  left: 0;
+  background-color: $background;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+
+  &.swipe-up {
+    top: -100vh;
+  }
+
+  .links {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 16px;
+    align-items: self-start;
+    font-size: 32px;
+    font-family: "Fira Code", monospace;
+    a {
+      color: $gray;
+      &.active,
+      &:hover {
+        color: white;
+      }
+      span {
+        color: $primary;
+      }
+    }
+  }
+  .socials {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: self-start;
+    a {
+      color: $gray;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
