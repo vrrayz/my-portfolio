@@ -8,13 +8,26 @@
   z-index: 2;
   background: $background;
   box-shadow: 1px 1px 6px #0000003b;
+  font-family: "Fira Code", monospace;
+  @media (min-width: $md) {
+    box-shadow: none;
+    padding-top: 32px;
+    max-width: clamp(620px, 74%, $lg);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto;
+  }
   a.logo {
-    font-family: "Fira Code", monospace;
     font-weight: bold;
     color: white;
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+  .menu-icon {
+    @media (min-width: $md) {
+      display: none;
+    }
   }
   .close-icon {
     transform: rotate(0deg);
@@ -38,6 +51,31 @@
   justify-content: end;
   flex-direction: column;
 
+  &-inline {
+    display: none;
+    @media (min-width: $md) {
+      display: block;
+    }
+    .links {
+      display: flex;
+      justify-content: space-evenly;
+      // padding: 16px;
+      align-items: self-start;
+      font-size: 16px;
+      gap: clamp(20px, 2.6%, 32px);
+      a {
+        color: $gray;
+        &.active,
+        &:hover {
+          color: white;
+        }
+        span {
+          color: $primary;
+        }
+      }
+    }
+  }
+
   &.swipe-up {
     top: -100vh;
   }
@@ -50,7 +88,6 @@
     padding: 16px;
     align-items: self-start;
     font-size: 32px;
-    font-family: "Fira Code", monospace;
     a {
       color: $gray;
       &.active,
@@ -76,7 +113,25 @@
     }
   }
 }
-
+.styled-socials {
+  display: none;
+  @media (min-width: $md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32px;
+    position: fixed;
+    top: 0;
+    left: 17px;
+    gap: 8px;
+    a {
+      color: $gray;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

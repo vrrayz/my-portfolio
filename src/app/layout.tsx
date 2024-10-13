@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/master.scss";
-import { Navigation } from "./components/Navigation";
+import { Navigation } from "./components/Navigation/Navigation";
 
 export const metadata: Metadata = {
   title: "TheGrimSavage | Software Developer",
@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={``}
-      >
+      <body className={``}>
         <Navigation />
         {children}
       </body>

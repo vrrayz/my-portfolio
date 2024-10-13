@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 
 interface Props {
   setIsNavbarToggled: (value: boolean) => void;
+  className?: string;
 }
-export const Close = ({ setIsNavbarToggled }: Props) => {
+export const Close = ({ setIsNavbarToggled, className }: Props) => {
   const [shouldRotate, setShouldRotate] = useState<boolean>(true);
 
   const closeNav = () => {
@@ -26,7 +27,7 @@ export const Close = ({ setIsNavbarToggled }: Props) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       onClick={() => closeNav()}
-      className={`close-icon ${shouldRotate && "rotate"}`}
+      className={`close-icon ${shouldRotate && "rotate"} ${className}`}
     >
       <rect
         width="1"
