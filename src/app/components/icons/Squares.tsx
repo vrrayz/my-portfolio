@@ -91,3 +91,15 @@ export const SquaresLarge = () => {
     </svg>
   );
 };
+
+// HOW TO USE THIS
+{
+  /* <div className="canvas" style={{ width: "156px", height: "156px" }}>
+        <div className="dot"></div>
+        <SquaresLarge />
+      </div>
+      <div className="canvas" style={{ width: "106px", height: "106px" }}>
+        <div className="dot"></div>
+        <Squares />
+      </div> */
+}
