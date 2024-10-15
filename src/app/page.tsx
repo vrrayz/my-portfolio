@@ -9,14 +9,13 @@ export default function Home() {
       <section className="hero">
         <div>
           <h3>
-            Elias is a <span>web designer</span> and{" "}
-            <span>front-end developer</span>
+            TheGrimSavage is a <span>full-stack developer</span>
           </h3>
           <p>
             He crafts responsive websites where technologies meet creativity
           </p>
         </div>
-        <div>
+        <div className="profile">
           <div className="picture-container">
             <Image src={selfie} alt={"picture"} />
             <div
@@ -35,6 +34,12 @@ export default function Home() {
             </div>
             <Dots className="dots md:hidden" />
             <DotsLarge className="dots hidden md:block" />
+          </div>
+          <div className="current-work">
+            <div className="box"></div>
+            <p className="text">
+              Currently working on <span>Portfolio</span>
+            </p>
           </div>
         </div>
       </section>
