@@ -1,0 +1,100 @@
+.canvas {
+  position: relative;
+  margin-top: 16px;
+  //   width: max-content;
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $primary;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px $primary;
+    animation-name: moveDot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes moveDot {
+  0% {
+    right: 0%;
+  }
+  10% {
+    right: 50%;
+  }
+  11% {
+    right: 50%;
+    top: 0%;
+  }
+  20% {
+    right: 50%;
+    top: 97%;
+  }
+  21% {
+    right: 51%;
+    top: 97%;
+  }
+  30% {
+    right: 97%;
+    top: 97%;
+  }
+  31% {
+    right: 97%;
+    top: 96%;
+  }
+  40% {
+    right: 97%;
+    top: 25%;
+  }
+  41% {
+    right: 96%;
+    top: 25%;
+  }
+  50% {
+    right: 25%;
+    top: 25%;
+  }
+  51% {
+    right: 25%;
+    top: 26%;
+  }
+  60% {
+    right: 25%;
+    top: 48%;
+  }
+  61% {
+    right: 26%;
+    top: 48%;
+  }
+  70% {
+    right: 73%;
+    top: 48%;
+  }
+  71% {
+    right: 73%;
+    top: 49%;
+  }
+  80% {
+    right: 73%;
+    top: 73%;
+  }
+  81% {
+    right: 72%;
+    top: 73%;
+  }
+  90% {
+    right: 0%;
+    top: 73%;
+  }
+  91% {
+    right: 0%;
+    top: 72%;
+  }
+  100% {
+    right: 0%;
+    top: 0%;
+  }
+}
