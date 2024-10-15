@@ -1,6 +1,8 @@
 import React from "react";
-
-export const Squares = () => {
+interface Props {
+  className?: string;
+}
+export const Squares = ({ className }: Props) => {
   return (
     <svg
       width="106"
@@ -8,6 +10,7 @@ export const Squares = () => {
       viewBox="0 0 106 107"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <mask id="path-1-inside-1_200_1457" fill="white">
         <path
@@ -46,7 +49,7 @@ export const Squares = () => {
   );
 };
 
-export const SquaresLarge = () => {
+export const SquaresLarge = ({ className }: Props) => {
   return (
     <svg
       width="156"
@@ -54,6 +57,7 @@ export const SquaresLarge = () => {
       viewBox="0 0 156 156"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <mask id="path-1-inside-1_64_1298" fill="white">
         <path
