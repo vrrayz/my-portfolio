@@ -1,0 +1,44 @@
+.project-card {
+  border: 1px solid $gray;
+  width: 100%;
+  color: $gray;
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center;
+  }
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-weight: $regular;
+    padding: 8px;
+    border: 1px solid $gray;
+    border-left: none;
+    border-right: none;
+  }
+  .card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .title {
+      font-size: 24px;
+      font-weight: $medium;
+      color: white;
+      // margin-bottom;
+    }
+    .description {
+      font-weight: $regular;
+    }
+    .action-buttons {
+      display: flex;
+      gap: 16px;
+      a {
+        padding: 8px 16px;
+        border: 1px solid $gray;
+      }
+    }
+  }
+}

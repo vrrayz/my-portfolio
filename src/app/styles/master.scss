@@ -29,12 +29,39 @@ a {
   text-decoration: none;
 }
 section {
+  padding: 34px 16px;
   @media (min-width: $md) {
     max-width: clamp(620px, 74%, $lg);
     margin: auto;
   }
 }
+
+section.projects {
+  .section-heading {
+    display: flex;
+    align-items: center;
+    font-size: clamp(24px, 6.4vw, 32px);
+    font-weight: $medium;
+    gap: 16px;
+    margin-bottom: 48px;
+    h3 {
+      span {
+        color: $primary;
+      }
+    }
+    .line {
+      width: 49.9%;
+      height: 5px;
+    }
+    .view-all {
+      font-size: clamp(14px, 3.73vw, 16px);
+      margin-left: auto;
+    }
+  }
+}
+
 @import "./navigation.scss";
 @import "./hero.scss";
 @import "./animated-box.scss";
 @import "./quote-section.scss";
+@import "./project-card.scss";

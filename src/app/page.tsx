@@ -3,6 +3,8 @@ import selfie from "./images/selfie.png";
 import { Dots, DotsLarge } from "./components/icons/Dots";
 import { SquaresLarge, Squares } from "./components/icons/Squares";
 import { QuotationMark } from "./components/icons/QuotationMark";
+import { HorizontalLine } from "./components/icons/Line";
+import { ProjectCard } from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -58,6 +60,20 @@ export default function Home() {
           <div className="author">- Dr. Who</div>
         </div>
         <div className="background-box hidden lg:block"></div>
+      </section>
+      <section className="projects">
+        <div className="section-heading">
+          <h3>
+            <span>#</span>projects
+          </h3>
+          <HorizontalLine className="line" />
+          <a href="#" className="view-all">
+            View all {"~~>"}
+          </a>
+        </div>
+        <div className="project-cards">
+          <ProjectCard />
+        </div>
       </section>
     </main>
   );

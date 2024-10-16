@@ -1,6 +1,7 @@
 section.quote-section {
   position: relative;
   max-width: 100%;
+  padding: 0;
   .quote-container {
     padding: 34px 16px;
     max-width: clamp(620px, 74%, 712px);
