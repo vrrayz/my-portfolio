@@ -14,16 +14,27 @@ $lg: 1024px;
 $xl: 1280px;
 $xxl: 1536px;
 
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+
 body {
   background-color: $background;
   color: white;
   margin: 0px;
   font-family: "Fira Code", monospace;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
 }
-
+section {
+  @media (min-width: $md) {
+    max-width: clamp(620px, 74%, $lg);
+    margin: auto;
+  }
+}
 @import "./navigation.scss";
 @import "./hero.scss";
 @import "./animated-box.scss";
+@import "./quote-section.scss";

@@ -1,0 +1,50 @@
+section.quote-section {
+  position: relative;
+  max-width: 100%;
+  .quote-container {
+    padding: 34px 16px;
+    max-width: clamp(620px, 74%, 712px);
+    margin: auto;
+    .quote,
+    .author {
+      border: 1px solid $gray;
+      letter-spacing: -1px;
+      @media (min-width: $md) {
+        font-size: clamp(18px, 2.34vw, 24px);
+      }
+    }
+    .quote {
+      position: relative;
+      padding: 32px;
+      font-weight: $medium;
+      .quotation-mark {
+        position: absolute;
+        &.top {
+          top: -14px;
+          left: 11px;
+        }
+        &.bottom {
+          bottom: -14px;
+          right: 11px;
+        }
+      }
+    }
+    .author {
+      border-top: none;
+      width: 162px;
+      margin-left: auto;
+      padding: 16px;
+      text-align: center;
+      font-weight: $regular;
+    }
+  }
+  .background-box {
+    width: 91px;
+    height: 91px;
+    position: absolute;
+    top: 14px;
+    right: -2px;
+    border: 1px solid $gray;
+    border-right: none;
+  }
+}

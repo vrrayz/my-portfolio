@@ -2,6 +2,7 @@ import Image from "next/image";
 import selfie from "./images/selfie.png";
 import { Dots, DotsLarge } from "./components/icons/Dots";
 import { SquaresLarge, Squares } from "./components/icons/Squares";
+import { QuotationMark } from "./components/icons/QuotationMark";
 
 export default function Home() {
   return (
@@ -42,6 +43,21 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section className="quote-section">
+        <div className="quote-container">
+          <div className="quote">
+            <span className="quotation-mark top">
+              <QuotationMark />
+            </span>
+            <p>With great power comes great electricity bill</p>
+            <span className="quotation-mark bottom">
+              <QuotationMark />
+            </span>
+          </div>
+          <div className="author">- Dr. Who</div>
+        </div>
+        <div className="background-box hidden lg:block"></div>
       </section>
     </main>
   );
